@@ -1,53 +1,70 @@
-# Google's ML Kit Flutter Plugin
+# Google's ML Kit for Flutter
 
-[![Pub Version](https://img.shields.io/pub/v/google_ml_kit)](https://pub.dev/packages/google_ml_kit)
-
-A Flutter plugin to use [Google's standalone ML Kit](https://developers.google.com/ml-kit) for Android and iOS.
+Google's ML Kit for Flutter is a set of [Flutter plugins](https://flutter.io/platform-plugins/) that enable [Flutter](https://flutter.dev) apps to use [Google's standalone ML Kit](https://developers.google.com/ml-kit).
 
 ## Features
 
-### Vision
+### Vision APIs
 
-| Feature                                                                                       | Android | iOS |
-|-----------------------------------------------------------------------------------------------|---------|-----|
-|[Text Recognition](https://developers.google.com/ml-kit/vision/text-recognition)               | ✅      | ✅  |
-|[Face Detection](https://developers.google.com/ml-kit/vision/face-detection)                   | ✅      | ✅  |
-|[Pose Detection](https://developers.google.com/ml-kit/vision/pose-detection)                   | ✅      | ✅  |
-|[Selfie Segmentation](https://developers.google.com/ml-kit/vision/selfie-segmentation)         | yet     | yet |
-|[Barcode Scanning](https://developers.google.com/ml-kit/vision/barcode-scanning)               | ✅      | ✅  |
-|[Image Labelling](https://developers.google.com/ml-kit/vision/image-labeling)                  | ✅      | ✅  |
-|[Object Detection and Tracking](https://developers.google.com/ml-kit/vision/object-detection)  | ✅      | yet |
-|[Digital Ink Recognition](https://developers.google.com/ml-kit/vision/digital-ink-recognition) | ✅      | ✅  |
-|[Text Detector V2](https://developers.google.com/ml-kit/vision/text-recognition/v2)            | ✅      | yet |
-|[Text Recognition V2](https://developers.google.com/ml-kit/vision/text-recognition/v2)         | ✅      | yet |
+| Feature                                                                                       | Plugin | Source Code| Android | iOS |
+|-----------------------------------------------------------------------------------------------|--------|------------|---------|-----|
+|[Barcode Scanning](https://developers.google.com/ml-kit/vision/barcode-scanning)               | [google\_mlkit\_barcode\_scanning](https://pub.dev/packages/google_mlkit_barcode_scanning) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_barcode_scanning)](https://pub.dev/packages/google_mlkit_barcode_scanning)                                | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_barcode_scanning)           | ✅ | ✅ |
+|[Face Detection](https://developers.google.com/ml-kit/vision/face-detection)                   | [google\_mlkit\_face\_detection](https://pub.dev/packages/google_mlkit_face_detection) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_face_detection)](https://pub.dev/packages/google_mlkit_face_detection)                                        | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_face_detection)             | ✅ | ✅ |
+|[Image Labeling](https://developers.google.com/ml-kit/vision/image-labeling)                   | [google\_mlkit\_image\_labeling](https://pub.dev/packages/google_mlkit_image_labeling) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_image_labeling)](https://pub.dev/packages/google_mlkit_image_labeling)                                        | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_image_labeling)             | ✅ | ✅ |
+|[Object Detection and Tracking](https://developers.google.com/ml-kit/vision/object-detection)  | [google\_mlkit\_object\_detection](https://pub.dev/packages/google_mlkit_object_detection) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_object_detection)](https://pub.dev/packages/google_mlkit_object_detection)                                | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_object_detection)           | ✅ | ✅ |
+|[Text Recognition](https://developers.google.com/ml-kit/vision/text-recognition)               | [google\_mlkit\_text\_recognition](https://pub.dev/packages/google_mlkit_text_recognition) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_text_recognition)](https://pub.dev/packages/google_mlkit_text_recognition)                                | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_text_recognition)           | ✅ | ✅ |
+|[Text Recognition V2](https://developers.google.com/ml-kit/vision/text-recognition/v2)         | [google\_mlkit\_text\_recognition](https://pub.dev/packages/google_mlkit_text_recognition) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_text_recognition)](https://pub.dev/packages/google_mlkit_text_recognition)                                | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_text_recognition)           | ✅ | ✅ |
+|[Digital Ink Recognition](https://developers.google.com/ml-kit/vision/digital-ink-recognition) | [google\_mlkit\_digital\_ink\_recognition](https://pub.dev/packages/google_mlkit_digital_ink_recognition) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_digital_ink_recognition)](https://pub.dev/packages/google_mlkit_digital_ink_recognition)   | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_digital_ink_recognition)    | ✅ | ✅ |
+|[Pose Detection](https://developers.google.com/ml-kit/vision/pose-detection)                   | [google\_mlkit\_pose\_detection](https://pub.dev/packages/google_mlkit_pose_detection) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_pose_detection)](https://pub.dev/packages/google_mlkit_pose_detection)                                        | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_pose_detection)             | ✅ | ✅ |
+|[Selfie Segmentation](https://developers.google.com/ml-kit/vision/selfie-segmentation)         | [google\_mlkit\_selfie\_segmentation](https://pub.dev/packages/google_mlkit_selfie_segmentation) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_selfie_segmentation)](https://pub.dev/packages/google_mlkit_selfie_segmentation)                    | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_selfie_segmentation)        | ✅ | ✅ |
 
-### Natural Language
+### Natural Language APIs
 
-| Feature                                                                                       | Android | iOS |
-|-----------------------------------------------------------------------------------------------|---------|-----|
-|[Language Identification](https://developers.google.com/ml-kit/language/identification)        | ✅      | ✅  |
-|[On-Device Translation](https://developers.google.com/ml-kit/language/translation)             | ✅      | yet |
-|[Smart Reply](https://developers.google.com/ml-kit/language/smart-reply)                       | ✅      | yet |
-|[Entity Extraction](https://developers.google.com/ml-kit/language/entity-extraction)           | ✅      | yet |
+| Feature                                                                                       | Plugin | Source Code| Android | iOS |
+|-----------------------------------------------------------------------------------------------|--------|------------|---------|-----|
+|[Language Identification](https://developers.google.com/ml-kit/language/identification)        | [google\_mlkit\_language\_id](https://pub.dev/packages/google_mlkit_language_id) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_language_id)](https://pub.dev/packages/google_mlkit_language_id)                                                    | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_language_id)                | ✅ | ✅ |
+|[On-Device Translation](https://developers.google.com/ml-kit/language/translation)             | [google\_mlkit\_translation](https://pub.dev/packages/google_mlkit_translation) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_translation)](https://pub.dev/packages/google_mlkit_translation)                                                     | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_translation)                | ✅ | ✅ |
+|[Smart Reply](https://developers.google.com/ml-kit/language/smart-reply)                       | [google\_mlkit\_smart\_reply](https://pub.dev/packages/google_mlkit_smart_reply) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_smart_reply)](https://pub.dev/packages/google_mlkit_smart_reply)                                                    | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_smart_reply)                | ✅ | ✅ |
+|[Entity Extraction](https://developers.google.com/ml-kit/language/entity-extraction)           | [google\_mlkit\_entity\_extraction](https://pub.dev/packages/google_mlkit_entity_extraction) [![Pub Version](https://img.shields.io/pub/v/google_mlkit_entity_extraction)](https://pub.dev/packages/google_mlkit_entity_extraction)                            | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_entity_extraction)          | ✅ | ✅ |
+
+**PLEASE READ THIS** before continuing or posting a [new issue](https://github.com/flutter-ml/google_ml_kit_flutter/issues):
+
+- [Google's ML Kit](https://developers.google.com/ml-kit) was build only for mobile platforms: iOS and Android apps.
+
+- This plugin is not sponsor or maintained by Google. The [authors](https://github.com/flutter-ml/google_ml_kit_flutter/blob/master/AUTHORS) are developers excited about machine learning that wanted to expose Google's native APIs to Flutter.
+
+- Google's ML Kit APIs are ony developed natively for iOS and Android. This plugin uses Flutter Platform Channels as explained [here](https://docs.flutter.dev/development/platform-integration/platform-channels).
+
+  Messages are passed between the client (the app/plugin) and host (platform) using platform channels as illustrated in this diagram:
+
+  <p align="center" width="100%">
+    <img src="https://docs.flutter.dev/assets/images/docs/PlatformChannels.png"> 
+  </p>
+
+  Messages and responses are passed asynchronously, to ensure the user interface remains responsive. To read more about platform channels go [here](https://docs.flutter.dev/development/platform-integration/platform-channels).
+
+  Because this plugin uses platform channels, no Machine Learning processing is done in Flutter/Dart, all the calls are passed to the native platform using `MethodChannel` in Android and `FlutterMethodChannel` in iOS, and executed using the Google's native APIs. Think of this plugin as a bridge between your app and Google's native ML Kit APIs. This plugin only passes the call to the native API and the processing is done by Google's API. It is important that you understand this concept when it comes to debugging errors for your ML model and/or app.
+
+- Since the plugin uses platform channels, you may encounter issues with the native API. Before submitting a new issue, identify the source of the issue. You can run both iOS and/or Android native [example apps by Google](https://github.com/googlesamples/mlkit) and make sure that the issue is not reproducible with their native examples. If you can reproduce the issue in their apps then report the issue to Google. The [authors](https://github.com/flutter-ml/google_ml_kit_flutter/blob/master/AUTHORS) do not have access to the source code of their native APIs, so you need to report the issue to them. If you find that their example apps are okay and still you have an issue using this plugin, then look at our [closed and open issues](https://github.com/googlesamples/mlkit/issues). If you cannot find anything that can help you then report the issue and provide enough details. Be patient, someone from the community will eventually help you.
 
 ## Requirements
 
 ### iOS
 
 - Minimum iOS Deployment Target: 10.0
-- Xcode 12 or newer
+- Xcode 13 or newer
 - Swift 5
-- ML Kit only supports 64-bit architectures (x86_64 and arm64). Check this [list](https://developer.apple.com/support/required-device-capabilities/) to see if your device has the required device capabilities.
+- ML Kit only supports 64-bit architectures (x86_64 and arm64). Check this [list](https://developer.apple.com/support/required-device-capabilities/) to see if your device has the required device capabilities. More info [here](https://developers.google.com/ml-kit/migration/ios).
 
-Since ML Kit does not support 32-bit architectures (i386 and armv7) ([Read mode](https://developers.google.com/ml-kit/migration/ios)), you need to exclude amrv7 architectures in Xcode in order to run `flutter build ios` or `flutter build ipa`.
+Since ML Kit does not support 32-bit architectures (i386 and armv7), you need to exclude armv7 architectures in Xcode in order to run `flutter build ios` or `flutter build ipa`. More info [here](https://developers.google.com/ml-kit/migration/ios).
 
 Go to Project > Runner > Building Settings > Excluded Architectures > Any SDK > armv7
 
-![](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/blob/master/ima/build_settings_01.png)
+![](https://github.com/flutter-ml/google_ml_kit_flutter/blob/master/resources/build_settings_01.png)
 
 Then your Podfile should look like this:
 
-```
+```ruby
 # add this line:
 $iOSVersion = '10.0'
 
@@ -77,332 +94,73 @@ Notice that the minimum `IPHONEOS_DEPLOYMENT_TARGET` is 10.0, you can set it to 
 ### Android
 
 - minSdkVersion: 21
-- targetSdkVersion: 29
-
-## Usage
-
-Add this plugin as dependency in your pubspec.yaml.
-
-- In your project-level build.gradle file, make sure to include Google's Maven repository in both your buildscript and allprojects sections(for all api's).
-- All API's except `Image Labeling`, `Face Detection` and `Barcode Scanning` use bundled models, hence others should work out of the box.
-- For API's using unbundled models, configure your application to download the model to your device automatically from play store by adding the following to your app's `AndroidManifest.xml`, if not configured the respective models will be downloaded when the API's are invoked for the first time. 
-
-  ```xml
-  <meta-data
-          android:name="com.google.mlkit.vision.DEPENDENCIES"
-          android:value="ica" />
-      <!-- To use multiple models: android:value="ica,model2,model3" -->
-  ```
-  
-  Use these options:
-  
-  - **ica** - `Image Labeling`
-  - **ocr** - `Barcode Scanning`
-  - **face** -`Face Detection`
-
-#### 1. Create an InputImage
-
-From path:
-
-```dart
-final inputImage = InputImage.fromFilePath(filePath);
-```
-
-From file:
-
-```dart
-final inputImage = InputImage.fromFile(file);
-```
-
-From bytes:
-
-```dart
-final inputImage = InputImage.fromBytes(bytes: bytes, inputImageData: inputImageData);
-```
-
-From CameraImage (if you are using the camera plugin):
-
-```dart
-final camera; // your camera instance
-final WriteBuffer allBytes = WriteBuffer();
-for (Plane plane in cameraImage.planes) {
-  allBytes.putUint8List(plane.bytes);
-}
-final bytes = allBytes.done().buffer.asUint8List();
-
-final Size imageSize = Size(cameraImage.width.toDouble(), cameraImage.height.toDouble());
-
-final InputImageRotation imageRotation =
-    InputImageRotationMethods.fromRawValue(camera.sensorOrientation) ??
-        InputImageRotation.Rotation_0deg;
-
-final InputImageFormat inputImageFormat =
-    InputImageFormatMethods.fromRawValue(cameraImage.format.raw) ??
-        InputImageFormat.NV21;
-
-final planeData = cameraImage.planes.map(
-  (Plane plane) {
-    return InputImagePlaneMetadata(
-      bytesPerRow: plane.bytesPerRow,
-      height: plane.height,
-      width: plane.width,
-    );
-  },
-).toList();
-
-final inputImageData = InputImageData(
-  size: imageSize,
-  imageRotation: imageRotation,
-  inputImageFormat: inputImageFormat,
-  planeData: planeData,
-);
-
-final inputImage = InputImage.fromBytes(bytes: bytes, inputImageData: inputImageData);
-```
-
-#### 2. Create an instance of detector
-
-```dart
-// vision
-final barcodeScanner = GoogleMlKit.vision.barcodeScanner();
-final digitalInkRecogniser = GoogleMlKit.vision.digitalInkRecogniser();
-final faceDetector = GoogleMlKit.vision.faceDetector();
-final imageLabeler = GoogleMlKit.vision.imageLabeler();
-final poseDetector = GoogleMlKit.vision.poseDetector();
-final textDetector = GoogleMlKit.vision.textDetector();
-final objectDetector = GoogleMlKit.vision.objectDetector(CustomObjectDetectorOptions or ObjectDetectorOptions);
-
-// nl
-final entityExtractor = GoogleMlKit.nlp.entityExtractor();
-final languageIdentifier = GoogleMlKit.nlp.languageIdentifier();
-final onDeviceTranslator = GoogleMlKit.nlp.onDeviceTranslator();
-final smartReply = GoogleMlKit.nlp.smartReply();
-
-// managing models
-final translateLanguageModelManager = GoogleMlKit.nlp.translateLanguageModelManager();
-final entityModelManager = GoogleMlKit.nlp.entityModelManager();
-final remoteModelManager = GoogleMlKit.vision.remoteModelManager();
-```
-
-#### 3. Call the corresponding method
-
-```dart
-// vision
-final List<Barcode> barcodes = await barcodeScanner.processImage(inputImage);
-final List<RecognitionCandidate> canditates = await digitalInkRecogniser.readText(points, languageTag);
-final List<Face> faces = await faceDetector.processImage(inputImage);
-final List<ImageLabel> labels = await imageLabeler.processImage(inputImage);
-final List<Pose> poses = await poseDetector.processImage(inputImage);
-final RecognisedText recognisedText = await textDetector.processImage(inputImage);
-final List<DetectedObject> objects = await objectDetector.processImage(inputImage);
-
-// nl
-final List<EntityAnnotation> entities = await entityExtractor.extractEntities(text, filters, locale, timezone);
-final bool response = await entityModelManager.downloadModel(modelTag);
-final String response = await entityModelManager.isModelDownloaded(modelTag);
-final String response = await entityModelManager.deleteModel(modelTag);
-final List<String> availableModels = await entityModelManager.getAvailableModels();
-try {
-  final String response = await languageIdentifier.identifyLanguage(text);
-} on PlatformException catch (pe) {
-  if (pe.code == languageIdentifier.errorCodeNoLanguageIdentified) {
-    // no language detected
-  }
-  // other plugin error
-}
-try {
-  final List<IdentifiedLanguage> response = await languageIdentifier.identifyPossibleLanguages(text);
-} on PlatformException catch (pe) {
-  if (pe.code == languageIdentifier.errorCodeNoLanguageIdentified) {
-    // no language detected
-  }
-  // other plugin error
-}
-final String response = await onDeviceTranslator.translateText(text);
-final bool response = await translateLanguageModelManager.downloadModel(modelTag);
-final String response = await translateLanguageModelManager.isModelDownloaded(modelTag);
-final String response = await translateLanguageModelManager.deleteModel(modelTag);
-final List<String> availableModels = await translateLanguageModelManager.getAvailableModels();
-final List<SmartReplySuggestion> suggestions = await smartReply.suggestReplies();
-// add conversations for suggestions
-smartReply.addConversationForLocalUser(text);
-smartReply.addConversationForRemoteUser(text, userID);
-```
-
-#### 4. Extract data from response.
-
-a. Extract barcodes.
-
-```dart
-for (Barcode barcode in barcodes) {
-  final BarcodeType type = barcode.type;
-  final Rect boundingBox = barcode.value.boundingBox;
-  final String displayValue = barcode.value.displayValue;
-  final String rawValue = barcode.value.rawValue;
-
-  // See API reference for complete list of supported types
-  switch (type) {
-    case BarcodeType.wifi:
-      BarcodeWifi barcodeWifi = barcode.value;
-      break;
-    case BarcodeValueType.url:
-      BarcodeUrl barcodeUrl = barcode.value;
-      break;
-  }
-}
-```
-
-b. Extract faces.
-
-```dart
-for (Face face in faces) {
-  final Rect boundingBox = face.boundingBox;
-
-  final double rotY = face.headEulerAngleY; // Head is rotated to the right rotY degrees
-  final double rotZ = face.headEulerAngleZ; // Head is tilted sideways rotZ degrees
-
-  // If landmark detection was enabled with FaceDetectorOptions (mouth, ears,
-  // eyes, cheeks, and nose available):
-  final FaceLandmark leftEar = face.getLandmark(FaceLandmarkType.leftEar);
-  if (leftEar != null) {
-    final Point<double> leftEarPos = leftEar.position;
-  }
-
-  // If classification was enabled with FaceDetectorOptions:
-  if (face.smilingProbability != null) {
-    final double smileProb = face.smilingProbability;
-  }
-
-  // If face tracking was enabled with FaceDetectorOptions:
-  if (face.trackingId != null) {
-    final int id = face.trackingId;
-  }
-}
-```
-
-c. Extract labels.
-
-```dart
-for (ImageLabel label in labels) {
-  final String text = label.text;
-  final int index = label.index;
-  final double confidence = label.confidence;
-}
-```
-
-d. Extract text.
-
-```dart
-String text = recognisedText.text;
-for (TextBlock block in recognisedText.blocks) {
-  final Rect rect = block.rect;
-  final List<Offset> cornerPoints = block.cornerPoints;
-  final String text = block.text;
-  final List<String> languages = block.recognizedLanguages;
-
-  for (TextLine line in block.lines) {
-    // Same getters as TextBlock
-    for (TextElement element in line.elements) {
-      // Same getters as TextBlock
-    }
-  }
-}
-```
-
-e. Pose detection
-
-```dart
-for (Pose pose in poses) {
-  // to access all landmarks
-  pose.landmarks.forEach((_, landmark) {
-    final type = landmark.type;
-    final x = landmark.x;
-    final y = landmark.y;
-  }
-  
-  // to access specific landmarks
-  final landmark = pose.landmarks[PoseLandmarkType.nose];
-}
-```
-
-f. Digital Ink Recognition
-
-```dart
-for (final candidate in candidates) {
-  final text = candidate.text;
-  final score = candidate.score;
-}
-```
-
-g. Extract Suggestions
-
-```dart
-//status implications
-//1 = Language Not Supported
-//2 = Can't determine a reply
-//3 = Successfully generated 1-3 replies
-int status = result['status'];
-
-List<SmartReplySuggestion> suggestions = result['suggestions'];
-```
-
-h. Extract Objects
-
-```dart
-for(DetectedObject detectedObject in _objects){
-  final rect = detectedObject.getBoundinBox();
-  final trackingId = detectedObject.getTrackingId();
-
-  for(Label label in detectedObject.getLabels()){
-    print('${label.getText()} ${label.getConfidence()}');
-  }
-}
-```
-
-#### 5. Release resources with `close()`.
-
-```dart
-// vision
-barcodeScanner.close();
-digitalInkRecogniser.close();
-faceDetector.close();
-imageLabeler.close();
-poseDetector.close();
-textDetector.close();
-objectDetector.close();
-
-// nl
-entityExtractor.close();
-languageIdentifier.close();
-onDeviceTranslator.close();
-smartReply.close();
-```
-
-#### Example app
-
-Look at this [example](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/tree/master/example) to see the plugin in action.
+- targetSdkVersion: 31
+- compileSdkVersion: 31
 
 ## Migrating from ML Kit for Firebase
 
-When Migrating from ML Kit for Firebase read [this guide](https://developers.google.com/ml-kit/migration). For Android details read [this](https://developers.google.com/ml-kit/migration/android). For iOS details read [this](https://developers.google.com/ml-kit/migration/ios).
+When Migrating from ML Kit for Firebase read [this guide](https://developers.google.com/ml-kit/migration). 
 
-## Known issues
+For Android details read [this](https://developers.google.com/ml-kit/migration/android). 
 
-### Android
+For iOS details read [this](https://developers.google.com/ml-kit/migration/ios).
 
-To reduce the apk size read more about it in issue [#26](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/issues/26). Also look at [this](https://developers.google.com/ml-kit/tips/reduce-app-size).
+## Firebase dependency: Custom Models
 
-### iOS
+Google's standalone ML Kit library does have any direct dependency with Firebase. As designed by Google, you do not need to include Firebase in your project in order to use ML Kit. However, some ML Kit APIs have the possibility to be used with [Custom Models](https://developers.google.com/ml-kit/custom-models), that means that the default models can be replaced with custom TensorFlow Lite models.
 
-If you are using this plugin in your app and any other plugin that requires Firebase, there is a known issues you will encounter a dependency error when running `pod install`. To read more about it go to issue [#27](https://github.com/bharat-biradar/Google-Ml-Kit-plugin/issues/27).
+The plugins that allow Custom Models are:
+
+- [google\_mlkit\_image\_labeling](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_image_labeling)
+- [google\_mlkit\_object\_detection](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_object_detection)
+
+### iOS Additional Setup
+To use custom models hosted in firebase in iOS, you have to update your app's Podfile.
+
+First, include `GoogleMLKit/LinkFirebase` and `Firebase` in your Podfile:
+
+```ruby
+platform :ios, '10.0'
+
+...
+
+# Enable firebase-hosted models #
+pod 'GoogleMLKit/LinkFirebase'
+pod 'Firebase'
+```
+
+Next, add the preprocessor flag to enable the firebase remote models at compile time. To do that, update your existing `build_configurations` loop in the `post_install` step with the following:
+
+```ruby
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    ... # Here are some configurations automatically generated by flutter
+
+    target.build_configurations.each do |config|
+      # Enable firebase-hosted ML models
+      config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= [
+        '$(inherited)',
+        'MLKIT_FIREBASE_MODELS=1',
+      ]
+    end
+  end
+end
+```
+
+To setup Firebase for your project check this links:
+
+- [Add Firebase to your Android project](https://firebase.google.com/docs/android/setup)
+- [Add Firebase to your iOS project](https://firebase.google.com/docs/ios/setup)
+
+Also please note that in latest [versions](https://github.com/flutter-ml/google_ml_kit_flutter/blob/master/packages/google_ml_kit/CHANGELOG.md), [google\_ml\_kit](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_ml_kit) has become an umbrella plugin including all the plugin listed in [Features](#features). For that reason you will need to configure Firebase in your project if using [google\_ml\_kit](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_ml_kit). We recommend you start using the plugins listed in [Features](#features) rather than using [google\_ml\_kit](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_ml_kit), otherwise you will be including unnecessary dependencies in your project.
+
+## Example app
+
+Find the example app [here](https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_ml_kit/example).
 
 ## Contributing
 
 Contributions are welcome.
-In case of any problems open an issue.
-Create a issue before opening a pull request for non trivial fixes.
-In case of trivial fixes open a pull request directly.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+In case of any problems look at [existing issues](https://github.com/flutter-ml/google_ml_kit_flutter/issues), if you cannot find anything related to your problem then open an issue.
+Create an issue before opening a [pull request](https://github.com/flutter-ml/google_ml_kit_flutter/pulls) for non trivial fixes.
+In case of trivial fixes open a [pull request](https://github.com/flutter-ml/google_ml_kit_flutter/pulls) directly.
